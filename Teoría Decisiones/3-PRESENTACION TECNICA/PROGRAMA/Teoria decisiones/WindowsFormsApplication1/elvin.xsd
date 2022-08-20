@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="elvin" targetNamespace="http://tempuri.org/elvin.xsd" xmlns:mstns="http://tempuri.org/elvin.xsd" xmlns="http://tempuri.org/elvin.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="elvin" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="elvin" msprop:Generator_UserDSName="elvin">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="rep1" msprop:Generator_TableClassName="rep1DataTable" msprop:Generator_TableVarName="tablerep1" msprop:Generator_RowChangedName="rep1RowChanged" msprop:Generator_TablePropName="rep1" msprop:Generator_RowDeletingName="rep1RowDeleting" msprop:Generator_RowChangingName="rep1RowChanging" msprop:Generator_RowEvHandlerName="rep1RowChangeEventHandler" msprop:Generator_RowDeletedName="rep1RowDeleted" msprop:Generator_RowClassName="rep1Row" msprop:Generator_UserTableName="rep1" msprop:Generator_RowEvArgName="rep1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="val" msprop:Generator_ColumnVarNameInTable="columnval" msprop:Generator_ColumnPropNameInRow="val" msprop:Generator_ColumnPropNameInTable="valColumn" msprop:Generator_UserColumnName="val" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rep2" msprop:Generator_TableClassName="rep2DataTable" msprop:Generator_TableVarName="tablerep2" msprop:Generator_RowChangedName="rep2RowChanged" msprop:Generator_TablePropName="rep2" msprop:Generator_RowDeletingName="rep2RowDeleting" msprop:Generator_RowChangingName="rep2RowChanging" msprop:Generator_RowEvHandlerName="rep2RowChangeEventHandler" msprop:Generator_RowDeletedName="rep2RowDeleted" msprop:Generator_RowClassName="rep2Row" msprop:Generator_UserTableName="rep2" msprop:Generator_RowEvArgName="rep2RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="val" msprop:Generator_ColumnVarNameInTable="columnval" msprop:Generator_ColumnPropNameInRow="val" msprop:Generator_ColumnPropNameInTable="valColumn" msprop:Generator_UserColumnName="val" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rep3" msprop:Generator_TableClassName="rep3DataTable" msprop:Generator_TableVarName="tablerep3" msprop:Generator_RowChangedName="rep3RowChanged" msprop:Generator_TablePropName="rep3" msprop:Generator_RowDeletingName="rep3RowDeleting" msprop:Generator_RowChangingName="rep3RowChanging" msprop:Generator_RowEvHandlerName="rep3RowChangeEventHandler" msprop:Generator_RowDeletedName="rep3RowDeleted" msprop:Generator_RowClassName="rep3Row" msprop:Generator_UserTableName="rep3" msprop:Generator_RowEvArgName="rep3RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="val" msprop:Generator_ColumnVarNameInTable="columnval" msprop:Generator_ColumnPropNameInRow="val" msprop:Generator_ColumnPropNameInTable="valColumn" msprop:Generator_UserColumnName="val" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rep4" msprop:Generator_TableClassName="rep4DataTable" msprop:Generator_TableVarName="tablerep4" msprop:Generator_RowChangedName="rep4RowChanged" msprop:Generator_TablePropName="rep4" msprop:Generator_RowDeletingName="rep4RowDeleting" msprop:Generator_RowChangingName="rep4RowChanging" msprop:Generator_RowEvHandlerName="rep4RowChangeEventHandler" msprop:Generator_RowDeletedName="rep4RowDeleted" msprop:Generator_RowClassName="rep4Row" msprop:Generator_UserTableName="rep4" msprop:Generator_RowEvArgName="rep4RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="val" msprop:Generator_ColumnVarNameInTable="columnval" msprop:Generator_ColumnPropNameInRow="val" msprop:Generator_ColumnPropNameInTable="valColumn" msprop:Generator_UserColumnName="val" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="rep5" msprop:Generator_TableClassName="rep5DataTable" msprop:Generator_TableVarName="tablerep5" msprop:Generator_RowChangedName="rep5RowChanged" msprop:Generator_TablePropName="rep5" msprop:Generator_RowDeletingName="rep5RowDeleting" msprop:Generator_RowChangingName="rep5RowChanging" msprop:Generator_RowEvHandlerName="rep5RowChangeEventHandler" msprop:Generator_RowDeletedName="rep5RowDeleted" msprop:Generator_RowClassName="rep5Row" msprop:Generator_UserTableName="rep5" msprop:Generator_RowEvArgName="rep5RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="val" msprop:Generator_ColumnVarNameInTable="columnval" msprop:Generator_ColumnPropNameInRow="val" msprop:Generator_ColumnPropNameInTable="valColumn" msprop:Generator_UserColumnName="val" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

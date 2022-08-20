@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{801C781E-CDC0-4A63-87B8-E678EBFDF231}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sistema_administracion_bares</RootNamespace>
+    <AssemblyName>sistema-administracion-bares</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Docking, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="ComponentFactory.Krypton.Navigator, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="ComponentFactory.Krypton.Workspace, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\winforms-modernui-master\winforms-modernui-master\MetroFramework\bin\Debug\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\..\winforms-modernui-master\winforms-modernui-master\MetroFramework.Design\bin\Debug\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\..\winforms-modernui-master\winforms-modernui-master\MetroFramework.Fonts\bin\Debug\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="almacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="almacen.Designer.cs">
+      <DependentUpon>almacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="articulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="articulos.Designer.cs">
+      <DependentUpon>articulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ayuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ayuda.Designer.cs">
+      <DependentUpon>ayuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="categoria.Designer.cs">
+      <DependentUpon>categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientes.Designer.cs">
+      <DependentUpon>clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="conversion_unidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="conversion_unidades.Designer.cs">
+      <DependentUpon>conversion_unidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxc.Designer.cs">
+      <DependentUpon>cxc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cxp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cxp.Designer.cs">
+      <DependentUpon>cxp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="c_ofertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="c_ofertas.Designer.cs">
+      <DependentUpon>c_ofertas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empleados.Designer.cs">
+      <DependentUpon>empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="estado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="estado.Designer.cs">
+      <DependentUpon>estado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="facturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facturacion.Designer.cs">
+      <DependentUpon>facturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marca.Designer.cs">
+      <DependentUpon>marca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mesass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mesass.Designer.cs">
+      <DependentUpon>mesass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="meseros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="meseros.Designer.cs">
+      <DependentUpon>meseros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movimientos.Designer.cs">
+      <DependentUpon>movimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ofertas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ofertas.Designer.cs">
+      <DependentUpon>ofertas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="principal.Designer.cs">
+      <DependentUpon>principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="probando.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="probando.Designer.cs">
+      <DependentUpon>probando.cs</DependentUpon>
+    </Compile>
+    <Compile Include="procesos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="progreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="progreso.Designer.cs">
+      <DependentUpon>progreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="proveedores.Designer.cs">
+      <DependentUpon>proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registro_usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registro_usuarios.Designer.cs">
+      <DependentUpon>registro_usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservaciones.Designer.cs">
+      <DependentUpon>reservaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tip.Designer.cs">
+      <DependentUpon>tip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tipo_proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tipo_proveedor.Designer.cs">
+      <DependentUpon>tipo_proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="t_clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="t_clientes.Designer.cs">
+      <DependentUpon>t_clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="t_mesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="t_mesas.Designer.cs">
+      <DependentUpon>t_mesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="t_mov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="t_mov.Designer.cs">
+      <DependentUpon>t_mov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="unidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="unidades.Designer.cs">
+      <DependentUpon>unidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="conversion_unidades.resx">
+      <DependentUpon>conversion_unidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="c_ofertas.resx">
+      <DependentUpon>c_ofertas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mesass.resx">
+      <DependentUpon>mesass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="probando.resx">
+      <DependentUpon>probando.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="progreso.resx">
+      <DependentUpon>progreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="almacen.resx">
+      <DependentUpon>almacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="articulos.resx">
+      <DependentUpon>articulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ayuda.resx">
+      <DependentUpon>ayuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="categoria.resx">
+      <DependentUpon>categoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientes.resx">
+      <DependentUpon>clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxc.resx">
+      <DependentUpon>cxc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cxp.resx">
+      <DependentUpon>cxp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empleados.resx">
+      <DependentUpon>empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="estado.resx">
+      <DependentUpon>estado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facturacion.resx">
+      <DependentUpon>facturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marca.resx">
+      <DependentUpon>marca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="meseros.resx">
+      <DependentUpon>meseros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movimientos.resx">
+      <DependentUpon>movimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ofertas.resx">
+      <DependentUpon>ofertas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="principal.resx">
+      <DependentUpon>principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="proveedores.resx">
+      <DependentUpon>proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registro_usuarios.resx">
+      <DependentUpon>registro_usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reservaciones.resx">
+      <DependentUpon>reservaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tip.resx">
+      <DependentUpon>tip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tipo_proveedor.resx">
+      <DependentUpon>tipo_proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="t_clientes.resx">
+      <DependentUpon>t_clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="t_mesas.resx">
+      <DependentUpon>t_mesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="t_mov.resx">
+      <DependentUpon>t_mov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="unidades.resx">
+      <DependentUpon>unidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagen-central.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %2810%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

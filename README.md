@@ -1,0 +1,1 @@
+Here are the projects implemented during the bachelor degree.

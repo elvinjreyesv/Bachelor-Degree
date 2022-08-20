@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="tallerConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="tallerConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApplication1.Properties.Settings.GlobalReference.Default.tallerConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable2" msprop:Generator_TableClassName="DataTable2DataTable" msprop:Generator_TableVarName="tableDataTable2" msprop:Generator_TablePropName="DataTable2" msprop:Generator_RowDeletingName="DataTable2RowDeleting" msprop:Generator_RowChangingName="DataTable2RowChanging" msprop:Generator_RowEvHandlerName="DataTable2RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable2RowDeleted" msprop:Generator_UserTableName="DataTable2" msprop:Generator_RowChangedName="DataTable2RowChanged" msprop:Generator_RowEvArgName="DataTable2RowChangeEvent" msprop:Generator_RowClassName="DataTable2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numfac" msprop:Generator_ColumnVarNameInTable="columnnumfac" msprop:Generator_ColumnPropNameInRow="numfac" msprop:Generator_ColumnPropNameInTable="numfacColumn" msprop:Generator_UserColumnName="numfac" type="xs:string" minOccurs="0" />
+              <xs:element name="fecfac" msprop:Generator_ColumnVarNameInTable="columnfecfac" msprop:Generator_ColumnPropNameInRow="fecfac" msprop:Generator_ColumnPropNameInTable="fecfacColumn" msprop:Generator_UserColumnName="fecfac" type="xs:string" minOccurs="0" />
+              <xs:element name="totdes" msprop:Generator_ColumnVarNameInTable="columntotdes" msprop:Generator_ColumnPropNameInRow="totdes" msprop:Generator_ColumnPropNameInTable="totdesColumn" msprop:Generator_UserColumnName="totdes" type="xs:string" minOccurs="0" />
+              <xs:element name="codcli" msprop:Generator_ColumnVarNameInTable="columncodcli" msprop:Generator_ColumnPropNameInRow="codcli" msprop:Generator_ColumnPropNameInTable="codcliColumn" msprop:Generator_UserColumnName="codcli" type="xs:string" minOccurs="0" />
+              <xs:element name="subtot" msprop:Generator_ColumnVarNameInTable="columnsubtot" msprop:Generator_ColumnPropNameInRow="subtot" msprop:Generator_ColumnPropNameInTable="subtotColumn" msprop:Generator_UserColumnName="subtot" type="xs:string" minOccurs="0" />
+              <xs:element name="ncf" msprop:Generator_ColumnVarNameInTable="columnncf" msprop:Generator_ColumnPropNameInRow="ncf" msprop:Generator_ColumnPropNameInTable="ncfColumn" msprop:Generator_UserColumnName="ncf" type="xs:string" minOccurs="0" />
+              <xs:element name="cliente" msprop:Generator_ColumnVarNameInTable="columncliente" msprop:Generator_ColumnPropNameInRow="cliente" msprop:Generator_ColumnPropNameInTable="clienteColumn" msprop:Generator_UserColumnName="cliente" type="xs:string" minOccurs="0" />
+              <xs:element name="cedula" msprop:Generator_ColumnVarNameInTable="columncedula" msprop:Generator_ColumnPropNameInRow="cedula" msprop:Generator_ColumnPropNameInTable="cedulaColumn" msprop:Generator_UserColumnName="cedula" type="xs:string" minOccurs="0" />
+              <xs:element name="telefono" msprop:Generator_ColumnVarNameInTable="columntelefono" msprop:Generator_ColumnPropNameInRow="telefono" msprop:Generator_ColumnPropNameInTable="telefonoColumn" msprop:Generator_UserColumnName="telefono" type="xs:string" minOccurs="0" />
+              <xs:element name="celular" msprop:Generator_ColumnVarNameInTable="columncelular" msprop:Generator_ColumnPropNameInRow="celular" msprop:Generator_ColumnPropNameInTable="celularColumn" msprop:Generator_UserColumnName="celular" type="xs:string" minOccurs="0" />
+              <xs:element name="codtip" msprop:Generator_ColumnVarNameInTable="columncodtip" msprop:Generator_ColumnPropNameInRow="codtip" msprop:Generator_ColumnPropNameInTable="codtipColumn" msprop:Generator_UserColumnName="codtip" type="xs:string" minOccurs="0" />
+              <xs:element name="tipo" msprop:Generator_ColumnVarNameInTable="columntipo" msprop:Generator_ColumnPropNameInRow="tipo" msprop:Generator_ColumnPropNameInTable="tipoColumn" msprop:Generator_UserColumnName="tipo" type="xs:string" minOccurs="0" />
+              <xs:element name="totfac" msprop:Generator_ColumnVarNameInTable="columntotfac" msprop:Generator_ColumnPropNameInRow="totfac" msprop:Generator_ColumnPropNameInTable="totfacColumn" msprop:Generator_UserColumnName="totfac" type="xs:string" minOccurs="0" />
+              <xs:element name="totitb" msprop:Generator_ColumnVarNameInTable="columntotitb" msprop:Generator_ColumnPropNameInRow="totitb" msprop:Generator_ColumnPropNameInTable="totitbColumn" msprop:Generator_UserColumnName="totitb" type="xs:string" minOccurs="0" />
+              <xs:element name="estado" msprop:Generator_ColumnVarNameInTable="columnestado" msprop:Generator_ColumnPropNameInRow="estado" msprop:Generator_ColumnPropNameInTable="estadoColumn" msprop:Generator_UserColumnName="estado" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="DataTable2Key1">
+      <xs:selector xpath=".//mstns:DataTable2" />
+      <xs:field xpath="mstns:numfac" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

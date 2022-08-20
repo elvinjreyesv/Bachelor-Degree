@@ -1,0 +1,772 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D8DA760-6E4F-41A7-93BE-6DA1903FFCEA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>habitacion</RootNamespace>
+    <AssemblyName>habitacion</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="utilidades%28c%29">
+      <HintPath>..\..\utilidades(c)\utilidades(c)\bin\Debug\utilidades(c).dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="change state.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change state.Designer.cs">
+      <DependentUpon>change state.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientes.Designer.cs">
+      <DependentUpon>clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consultar-art.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultar-art.Designer.cs">
+      <DependentUpon>consultar-art.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consult_clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consult_clientes.designer.cs">
+      <DependentUpon>consult_clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consult_emple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consult_emple.designer.cs">
+      <DependentUpon>consult_emple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consult_estadia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consult_estadia.Designer.cs">
+      <DependentUpon>consult_estadia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consult_habit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consult_habit.designer.cs">
+      <DependentUpon>consult_habit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consult_provee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consult_provee.Designer.cs">
+      <DependentUpon>consult_provee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consult_regusu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consult_regusu.designer.cs">
+      <DependentUpon>consult_regusu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consult_reserv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consult_reserv.Designer.cs">
+      <DependentUpon>consult_reserv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consult_temat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consult_temat.designer.cs">
+      <DependentUpon>consult_temat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consult_tipcliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consult_tipcliente.designer.cs">
+      <DependentUpon>consult_tipcliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consult_tiphabit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consult_tiphabit.Designer.cs">
+      <DependentUpon>consult_tiphabit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consult_tipoemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consult_tipoemp.designer.cs">
+      <DependentUpon>consult_tipoemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consult_tipprod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consult_tipprod.Designer.cs">
+      <DependentUpon>consult_tipprod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consult_tipprov.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consult_tipprov.Designer.cs">
+      <DependentUpon>consult_tipprov.cs</DependentUpon>
+    </Compile>
+    <Compile Include="control_caja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="control_caja.Designer.cs">
+      <DependentUpon>control_caja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empleados.Designer.cs">
+      <DependentUpon>empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="entre_fechas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="entre_fechas.Designer.cs">
+      <DependentUpon>entre_fechas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="estado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="estado.Designer.cs">
+      <DependentUpon>estado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="facturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facturacion.Designer.cs">
+      <DependentUpon>facturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="habitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="habitacion.Designer.cs">
+      <DependentUpon>habitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="habitacionn.cs" />
+    <Compile Include="productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productos.Designer.cs">
+      <DependentUpon>productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_auditoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_auditoria.Designer.cs">
+      <DependentUpon>reporte_auditoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_cliente.Designer.cs">
+      <DependentUpon>reporte_cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_empleados.Designer.cs">
+      <DependentUpon>reporte_empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_estadia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_estadia.Designer.cs">
+      <DependentUpon>reporte_estadia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_estado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_estado.Designer.cs">
+      <DependentUpon>reporte_estado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_fact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_fact.Designer.cs">
+      <DependentUpon>reporte_fact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_factura2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_factura2.Designer.cs">
+      <DependentUpon>reporte_factura2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_facturadetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_facturadetalle.Designer.cs">
+      <DependentUpon>reporte_facturadetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_facturas2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_facturas2.Designer.cs">
+      <DependentUpon>reporte_facturas2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_habitac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_habitac.Designer.cs">
+      <DependentUpon>reporte_habitac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_productos.Designer.cs">
+      <DependentUpon>reporte_productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_proveedor.Designer.cs">
+      <DependentUpon>reporte_proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_tematica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_tematica.Designer.cs">
+      <DependentUpon>reporte_tematica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_tipoclient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_tipoclient.Designer.cs">
+      <DependentUpon>reporte_tipoclient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_tipoemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_tipoemp.Designer.cs">
+      <DependentUpon>reporte_tipoemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_tipohabit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_tipohabit.Designer.cs">
+      <DependentUpon>reporte_tipohabit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_tipoproduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_tipoproduct.Designer.cs">
+      <DependentUpon>reporte_tipoproduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_tiposupli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_tiposupli.Designer.cs">
+      <DependentUpon>reporte_tiposupli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reporte_usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporte_usuarios.Designer.cs">
+      <DependentUpon>reporte_usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reservaciones.Designer.cs">
+      <DependentUpon>reservaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="suplidores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="suplidores.Designer.cs">
+      <DependentUpon>suplidores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tematica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tematica.Designer.cs">
+      <DependentUpon>tematica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="principal.Designer.cs">
+      <DependentUpon>principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tipo de estadia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tipo de estadia.Designer.cs">
+      <DependentUpon>tipo de estadia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tipo_habitacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tipo_habitacion.Designer.cs">
+      <DependentUpon>tipo_habitacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tipo_empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tipo_empleado.Designer.cs">
+      <DependentUpon>tipo_empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tipo_cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tipo_cliente.Designer.cs">
+      <DependentUpon>tipo_cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tipo_productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tipo_productos.Designer.cs">
+      <DependentUpon>tipo_productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="registrar usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registrar usuarios.Designer.cs">
+      <DependentUpon>registrar usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tipo_proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tipo_proveedor.Designer.cs">
+      <DependentUpon>tipo_proveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usuarios.Designer.cs">
+      <DependentUpon>usuarios.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="change state.resx">
+      <DependentUpon>change state.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientes.resx">
+      <DependentUpon>clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultar-art.resx">
+      <DependentUpon>consultar-art.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consult_clientes.resx">
+      <DependentUpon>consult_clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consult_emple.resx">
+      <DependentUpon>consult_emple.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consult_estadia.resx">
+      <DependentUpon>consult_estadia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consult_habit.resx">
+      <DependentUpon>consult_habit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consult_provee.resx">
+      <DependentUpon>consult_provee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consult_regusu.resx">
+      <DependentUpon>consult_regusu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consult_reserv.resx">
+      <DependentUpon>consult_reserv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consult_temat.resx">
+      <DependentUpon>consult_temat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consult_tipcliente.resx">
+      <DependentUpon>consult_tipcliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consult_tiphabit.resx">
+      <DependentUpon>consult_tiphabit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consult_tipoemp.resx">
+      <DependentUpon>consult_tipoemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consult_tipprod.resx">
+      <DependentUpon>consult_tipprod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consult_tipprov.resx">
+      <DependentUpon>consult_tipprov.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control_caja.rdlc" />
+    <EmbeddedResource Include="control_caja.resx">
+      <DependentUpon>control_caja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empleados.resx">
+      <DependentUpon>empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="entre_fechas.resx">
+      <DependentUpon>entre_fechas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="estado.resx">
+      <DependentUpon>estado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="facturacion.resx">
+      <DependentUpon>facturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factura_enter_fechas.rdlc" />
+    <EmbeddedResource Include="habitacion.resx">
+      <DependentUpon>habitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productos.resx">
+      <DependentUpon>productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="reporte_auditoria.resx">
+      <DependentUpon>reporte_auditoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_cliente.resx">
+      <DependentUpon>reporte_cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_empleados.resx">
+      <DependentUpon>reporte_empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_estadia.resx">
+      <DependentUpon>reporte_estadia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_estado.resx">
+      <DependentUpon>reporte_estado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_fact.resx">
+      <DependentUpon>reporte_fact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_factura2.resx">
+      <DependentUpon>reporte_factura2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_facturadetalle.resx">
+      <DependentUpon>reporte_facturadetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_facturas2.resx">
+      <DependentUpon>reporte_facturas2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_habitac.resx">
+      <DependentUpon>reporte_habitac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_productos.resx">
+      <DependentUpon>reporte_productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_proveedor.resx">
+      <DependentUpon>reporte_proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_tematica.resx">
+      <DependentUpon>reporte_tematica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_tipoclient.resx">
+      <DependentUpon>reporte_tipoclient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_tipoemp.resx">
+      <DependentUpon>reporte_tipoemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_tipohabit.resx">
+      <DependentUpon>reporte_tipohabit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_tipoproduct.resx">
+      <DependentUpon>reporte_tipoproduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_tiposupli.resx">
+      <DependentUpon>reporte_tiposupli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporte_usuarios.resx">
+      <DependentUpon>reporte_usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rep_auditoria.rdlc" />
+    <EmbeddedResource Include="rep_cajafactura2.rdlc" />
+    <EmbeddedResource Include="Rep_cliente.rdlc" />
+    <EmbeddedResource Include="Rep_empleados.rdlc" />
+    <EmbeddedResource Include="Rep_estadia.rdlc" />
+    <EmbeddedResource Include="rep_estado.rdlc" />
+    <EmbeddedResource Include="Rep_facturac2.rdlc" />
+    <EmbeddedResource Include="Rep_facturadetalle.rdlc" />
+    <EmbeddedResource Include="Rep_habit.rdlc" />
+    <EmbeddedResource Include="Rep_productos.rdlc" />
+    <EmbeddedResource Include="Rep_proveedor.rdlc" />
+    <EmbeddedResource Include="rep_tematica.rdlc" />
+    <EmbeddedResource Include="Rep_tipoclient.rdlc" />
+    <EmbeddedResource Include="Rep_tipoemp.rdlc" />
+    <EmbeddedResource Include="Rep_tipohabitac.rdlc" />
+    <EmbeddedResource Include="Rep_tipoproduct.rdlc" />
+    <EmbeddedResource Include="Rep_tiposupli.rdlc" />
+    <EmbeddedResource Include="Rep_usuarios.rdlc" />
+    <EmbeddedResource Include="reservaciones.resx">
+      <DependentUpon>reservaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suplidores.resx">
+      <DependentUpon>suplidores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tematica.resx">
+      <DependentUpon>tematica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="principal.resx">
+      <DependentUpon>principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="tipo de estadia.resx">
+      <DependentUpon>tipo de estadia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tipo_habitacion.resx">
+      <DependentUpon>tipo_habitacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tipo_empleado.resx">
+      <DependentUpon>tipo_empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tipo_cliente.resx">
+      <DependentUpon>tipo_cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tipo_productos.resx">
+      <DependentUpon>tipo_productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registrar usuarios.resx">
+      <DependentUpon>registrar usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tipo_proveedor.resx">
+      <DependentUpon>tipo_proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usuarios.resx">
+      <DependentUpon>usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1354069627_saveall-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1354069571_notepad-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1354069451_dialog-close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1354069525_view-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1354069449_misc_17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2824%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1354069627_saveall-241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2823%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %288%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %288%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2829%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2831%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2815%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %287%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2812%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %2810%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %286%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2828%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %288%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2829%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1354069683_unlock-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2841%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2816%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1354036530_Zoom_Out-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1354036256_Junior_Icon_68_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ggg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2812%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1351311513_kservices.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2827%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2813%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2811%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %289%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2811%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2813%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %2831%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1351311758_folder_documents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1354036182_icon_dokuments.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
